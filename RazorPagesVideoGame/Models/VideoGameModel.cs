@@ -15,7 +15,9 @@ namespace RazorPagesVideoGame.Models
         public string ReleaseYear { get; set; }
         public string Platform { get; set; }
         public string Publisher { get; set; }
-        public bool CompleteCopy { get; set; }
-        public bool PhysicalCopy { get; set; }
+        [Display(Name = "Complete Copy")]
+        public string CompleteCopy { get; set; }
+        [Display(Name = "Physical Copy")]
+        public string PhysicalCopy { get; set; }
     }
 }
